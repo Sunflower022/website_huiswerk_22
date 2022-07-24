@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+  position: relative;
+}
+body{
+  background-color: lightsteelblue;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content min-content auto min-content;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  height: 60px;
+  z-index: 1;
+}
+.navbar > .container-fluid{
+  background-color: mediumpurple;
+  z-index: 0;
+}
+.navbar > .container-fluid > a > .navbar-image{
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}
+.navbar > .container-fluid > .collapse > .navbar-nav > .nav-item > .nav-link{
+  color: white;
+}
+.navbar > .container-fluid > .collapse > .navbar-nav > .nav-item > .nav-link:hover{
+  color: pink;
+}
+.container-sm {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container-sm > .row{
+  border-radius: 15px;
+}
+.container-sm > .row > .col{
+  background-color: lightblue;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container-sm > .row > .col > .foto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  border-radius: 15px;
+  width:  15em;
+  height: 15em;
+}
+header > .alert{
+  border: 2px solid white;
+  margin: 0;
+}
+footer{
+  height: 201px;
+  background-color: mediumpurple;
+  display: block;
+  align-content: flex-end;
+  z-index: -1;
+}
+footer > .goto-top{
+  text-align: center;
+  padding-top: 20px;
+}
+footer > .goto-top > a > img{
+  width: 128px;
+  height: 128px;
+}
+footer > .cr-info{
+  text-align: right;
+  margin-right: 20px;
+}

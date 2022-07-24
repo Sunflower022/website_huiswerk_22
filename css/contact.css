@@ -1,0 +1,60 @@
+body{
+  background-color: lightsteelblue;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content auto min-content;
+}
+nav {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.container-sm {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  background-color: powderblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.container-sm > .contactformulier {
+  overflow: hidden;
+}
+.container-sm > .contactformulier > fieldset {
+  display: grid;
+  margin: 10px;
+}
+.container-sm > .contactformulier > fieldset > input {
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid silver;
+}
+.container-sm > .contactformulier > fieldset > input:focus {
+  outline-color: grey;
+}
+.container-sm > .contactformulier > fieldset > textarea {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+  border: 1px solid silver;
+}
+.container-sm > .contactformulier > fieldset > textarea:focus {
+  outline-color: grey;
+}
+.container-sm > .contactformulier > fieldset > button {
+  border-radius: 10px;
+  background-color: grey;
+  color: white;
+  border: 1px solid silver;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.container-sm > .contactformulier > fieldset > button:hover {
+  background-color: mediumpurple;
+}
